@@ -44,6 +44,7 @@ int main(void)
             curr = next;
         }
         free(head);
+        printf("\t\t Bye \n");
         return 0;
       default:
         printf("Please select item in range of 1 to 5 \n");
@@ -149,6 +150,7 @@ void printAll(Node* node) {
       return;
     }
 
+    printf("[ Address List ]\n");
     while (node != NULL) {
       printf("Name: %s \tTelNumber: %s \n", node->name, node->telNum);
       node = node->next;
