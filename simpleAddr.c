@@ -89,9 +89,8 @@ void delNode(Node *target){
 
   while(curr!=NULL){
     if(!strcmp(curr->name, name)){
-      Node *next = curr->next;
+      prev->next = curr->next;
       free(curr);
-      prev->next = next;
       break;
     }
     else
